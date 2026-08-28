@@ -39,8 +39,7 @@ export default function RootLayout({ children }) {
             <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-500">
               <a href="/" className="hover:text-slate-900 transition-colors">Home</a>
               <a href="/funcionalidades" className="hover:text-slate-900 transition-colors">Funcionalidades</a>
-              <a href="#" className="hover:text-slate-900 transition-colors">Sobre nós</a>
-              <a href="#" className="hover:text-slate-900 transition-colors">Documentação</a>
+              <a href="/sobre_nos" className="hover:text-slate-900 transition-colors">Sobre nós</a>
             </div>
 
             <div>

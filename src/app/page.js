@@ -15,11 +15,6 @@ export default function Home() {
           Voce trabalha como autônomo e sente dificuldade para gerenciar seu lucro? Nosso site pode te auxiliar!
         </p>
 
-        {/* Botão funcionalidades */}
-        <button className="mt-8 bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-100 transition-colors shadow-sm">
-          Ver funcionalidades
-        </button>
-
         {/* Container da Imagem do Gráfico Oficial (AGORA NO LUGAR CERTO!) */}
         <div className="mt-16 w-full max-w-3xl flex justify-center">
           <img 
