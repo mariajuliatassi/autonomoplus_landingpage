@@ -1,28 +1,34 @@
+import TeamAvatar from "../components/TeamAvatar";
+
 export default function Sobre_nos() {
 
   const team = [
-    {
+    { 
+      photo: "/pedro.jpeg",
       name: "Pedro Santos",
       role: "Full-Stack Developer",
-      description: "Responsável pelo desenvolvimento full-stack",
+      description: "Responsável pelo desenvolvimento full-stack do sistema",
       linkedin: "https://www.linkedin.com/in/pedro-hrsantos?",
-      github: "utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      github: "https://github.com/DevPH-Santos",
     },
     {
+      photo: "/maju.jpeg",
       name: "Maria Júlia Tassi",
-      role: "Front-end Developer & Database Developer",
-      description: "Responsável pelo desenvolvimento frontend, modelagem e desenvolvimento do banco de dados",
+      role: "Front-end & Database Developer",
+      description: "Responsável pelo desenvolvimento frontend da página de divulgação, modelagem e desenvolvimento do banco de dados",
       linkedin: "https://linkedin.com/in/mariajuliatasi",
       github: "https://github.com/mariajuliatasi",
     },
     {
+      photo: "/livia.jpeg",
       name: "Lívia Gabrielly Oliveira",
-      role: "Quality Assurance & Data Modeler",
+      role: "Analista de qualidade & Modelagem de dados",
       description: "Responsável pela qualidade do nosso sistema e modelagem de dados",
       linkedin: "https://linkedin.com/in/liviagabrielly",
       github: "https://github.com/liviagabrielly",
     },
     {
+      photo: "/victoria.jpeg",
       name: "Victoria da Silva",
       role: "Documentação",
       description: "Responsável pela documentação do sistema",
@@ -30,6 +36,7 @@ export default function Sobre_nos() {
       github: "https://github.com/victoriadasilva",
     },
     {
+      photo: "/emanuel.jpeg",
       name: "Emanuel Muzy",
       role: "Diário de bordo",
       description: "Responsável pela organização das tarefas",
@@ -57,6 +64,8 @@ export default function Sobre_nos() {
             key={member.name}
             className="bg-white border border-slate-100 rounded-2xl p-6 flex flex-col items-center text-center gap-4 shadow-sm"
           >
+            <TeamAvatar name={member.name} photo={member.photo} />
+
             <div>
               <h3 className="font-bold text-slate-900 text-lg">{member.name}</h3>
               <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mt-1">{member.role}</p>

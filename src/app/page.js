@@ -15,7 +15,7 @@ export default function Home() {
           Voce trabalha como autônomo e sente dificuldade para gerenciar seu lucro? Nosso site pode te auxiliar!
         </p>
 
-        {/* Container da Imagem do Gráfico Oficial (AGORA NO LUGAR CERTO!) */}
+        {/* Container da Imagem do Gráfico Oficial */}
         <div className="mt-16 w-full max-w-3xl flex justify-center">
           <img 
             src="/grafico.png" 
