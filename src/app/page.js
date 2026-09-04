@@ -1,3 +1,12 @@
+import ImageCarousel from "./components/ImageCarousel";
+
+const heroImages = [
+  { src: "/promocao.webp", alt: "Foto promocional" },
+  { src: "/novidades.webp", alt: "Novidades! Estamos preparando um aplicativo mobile para o Autônomo+" },
+  { src: "/paginainicial.jpeg", alt: "Ilustração da tela inicial do sistema Autônomo+" },
+  { src: "/grafico.png", alt: "Gráfico de Desempenho da Receita" },
+];
+
 export default function Home() {
   return (
     <div className="bg-white min-h-screen text-slate-900 font-sans">
@@ -15,13 +24,9 @@ export default function Home() {
           Voce trabalha como autônomo e sente dificuldade para gerenciar seu lucro? Nosso site pode te auxiliar!
         </p>
 
-        {/* Container da Imagem do Gráfico Oficial */}
+        {/* Carrossel com as telas do sistema */}
         <div className="mt-16 w-full max-w-3xl flex justify-center">
-          <img 
-            src="/grafico.png" 
-            alt="Gráfico de Desempenho da Receita" 
-            className="w-full h-auto rounded-2xl shadow-xl shadow-slate-100/50 object-contain border border-slate-100"
-          />
+          <ImageCarousel images={heroImages} />
         </div>
 
       </section>
